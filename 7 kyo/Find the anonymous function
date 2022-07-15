@@ -1,0 +1,5 @@
+var FindFunction = function(func, arr) {
+  const rawFunction = []
+  func.forEach(e => typeof(e) === 'function' ? rawFunction.push(e) : '')
+  return arr.filter(...rawFunction)
+}
