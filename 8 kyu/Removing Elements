@@ -1,0 +1,6 @@
+function removeEveryOther(arr){
+  //your code here
+  return arr.filter((el, index) => {
+    if(index % 2 === 0) return el
+  })
+}
