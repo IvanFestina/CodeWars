@@ -1,0 +1,22 @@
+This kata is a code golf, so the object is to solve the problem in as few characters as possible.
+
+Createa function z that given the length l of a 1-dimensional sorted array, returns the maximum iterations it will take to find any value in the array using a binary search.
+
+Your function must be <= 100 characters.
+The majority of the Math object is missing, so your answer shouldn't count on it
+You do not need to validate input -- l will always be >= 1
+Characters includes the function keyword, parameters, brackets, return keyword, whitespace, etc. Essentially the character count is every character in your function.
+
+Above your solution, place a comment that gives the character count for your function so we can more easily see who has the shortest answer.
+
+Your code will likely be very confusing, so if you have the time, comment on your own solution and explain it.
+
+z(1) //returns 1
+z(2) //returns 2
+z(4) //returns 3
+z(999) //returns 10
+z(1000) //returns 10
+
+
+
+const z(l,r=1) =>l<=1?r:z(l/2-l%1,r+1)
